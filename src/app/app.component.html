@@ -1,0 +1,6 @@
+<app-vertical-timeline [items]="timelineValues">
+  <ng-container *appTimelineItem="let date">
+    <p>{{ date.label }}</p>
+    <img *ngIf="date.img" [src]="date.img" [alt]="date.label" class="image-small">
+  </ng-container>
+</app-vertical-timeline>
